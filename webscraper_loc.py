@@ -1,3 +1,4 @@
+#Goes through all HTML pages of the provided website, and extracts their text in TXT and HTML format. 
 #!/usr/bin/env python
 # coding: utf-8
 
