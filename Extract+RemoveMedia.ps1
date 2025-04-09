@@ -1,3 +1,7 @@
+# This PowerShell script processes all DOCX, XLSX, PPTX files in the directory it is placed. 
+# It extracts the media folder from any detected files for localization porpuses. 
+# For PPTX specifically, it also remove the media folder from the original files.
+
 [Reflection.Assembly]::LoadWithPartialName('System.IO.Compression.FileSystem') | Out-Null
 
 for ($LoopCounter = 1; $LoopCounter -le 3; $LoopCounter++) {
