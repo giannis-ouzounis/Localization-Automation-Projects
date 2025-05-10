@@ -3,10 +3,10 @@ Option Explicit
 
 Sub LV01a_BT_with_CAT_Tool_prep_batch()
 
-'First is the multi file saving macro to presever the original files.
-'This Macro will take an XTM word Bilingual file removed the source text and
-'move the target into the Left column, adding an empty right column for
-'new translation.
+'Pick source & save-to folders ➜ loop through Word docs ➜ run per-file macro ➜ save copy.
+'Accept all changes, hide headers, insert blank column for back-translation, hide source rows.
+'Unhide everything, strip headers, delete extra columns, add header row (“TRANSLATION / BACKTRANSLATION”), hide source rows.
+'uhideAllText shows all hidden text. HideOddRowsFromXTMBilDoc hides every other row (source).
 
 
 'Set Variables
@@ -190,7 +190,7 @@ End Sub
 
 Sub LV02a_BT_with_CAT_Tool_prepForEQS_batch()
 '@Welocalize LS 2020
-'Edited by Adri� Aleu & Stephanie Pietz
+'Edited by Adrià Aleu & Stephanie Pietz
 
 'First is the multi file saving macor to presever the original files.
 'This Macro will take an XTM word Bilingual file removed the source text and
